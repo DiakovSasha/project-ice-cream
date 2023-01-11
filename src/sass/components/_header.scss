@@ -1,0 +1,141 @@
+.header {
+  background-color: var(--pink-color-background);
+  padding-top: 37px;
+  
+  
+
+  &__logo {
+    margin-right: 110px;
+    width: 199px;
+    height: 50px;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__controls {
+    margin-top: 84px;
+    margin-left: 115px;
+    margin-bottom: 56px;
+    max-width: 277px;
+  }
+  &__title {
+    margin-bottom: 25px;
+    font-family: 'Titan One';
+
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 44px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--primary-white-color);
+  }
+  &__title-accent {
+    font-family: 'Titan One';
+
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 90.5%;
+    /* or 52px */
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--accent-color-dark-red);
+  }
+}
+.btns__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btns__item {
+  margin-right: 15px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: centerj;
+
+  &__list {
+    display: flex;
+    margin-right: 110px;
+  }
+  &__item:not(:last-child) {
+    margin-right: 35px;
+  }
+  &__link {
+    font-family: 'DM Sans';
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--primary-white-color);
+    &:hover {
+      color: var(--accent-color-dark-red);
+    }
+  }
+  &__btn {
+    height: 44px;
+    width: 159px;
+    margin-right: 115px;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+  }
+}
+.btns__link {
+  padding-left: 19px;
+  padding-right: 19px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.23px;
+}
+.quantity {
+  position: absolute;
+  top: 155px;
+  right: 97px;
+  &__span {
+    font-family: 'Titan One';
+
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 53px;
+    /* identical to box height */
+
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--accent-color-dark-red);
+    &:after {
+      content: '';
+      width: 30px;
+      height: 30px;
+      background-color: var(--primary-white-color);
+      display: block;
+      position: absolute;
+      border-radius: 50%;
+      top: -5px;
+      right: -18px;
+      z-index: -1;
+    }
+  }
+  &__item {
+    text-align: right;
+    position: relative;
+  }
+
+  &__text {
+    font-family: 'DM Sans';
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: var(--primary-white-color);
+  }
+}
