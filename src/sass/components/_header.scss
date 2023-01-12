@@ -1,15 +1,24 @@
 .header {
   background-color: var(--pink-color-background);
-  padding-top: 37px;
-  
-  
+  min-width: 665px;
+
+  &__container {
+    padding-top: 37px;
+    padding-bottom: 57px;
+    background-image: url('../images/bio-milk.png'),
+      url('../images/ice-cream-big.png'), url('../images/so-tasty.png'),
+      url('../images/ellipse.png');
+    background-repeat: no-repeat;
+    background-position: left 77px bottom 46px, left 594px bottom 0,
+      right 109px bottom 0, top 51px right 267px;
+  }
 
   &__logo {
-    margin-right: 110px;
     width: 199px;
     height: 50px;
+    margin-left: 46px;
   }
-  &__container {
+  &__menu-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,14 +26,13 @@
   &__controls {
     margin-top: 84px;
     margin-left: 115px;
-    margin-bottom: 56px;
+    margin-bottom: 112px;
     max-width: 277px;
   }
   &__title {
     margin-bottom: 25px;
     font-family: 'Titan One';
 
-    font-weight: 400;
     font-size: 38px;
     line-height: 44px;
     letter-spacing: 0.04em;
@@ -35,7 +43,6 @@
   &__title-accent {
     font-family: 'Titan One';
 
-    font-weight: 400;
     font-size: 58px;
     line-height: 90.5%;
     /* or 52px */
@@ -44,6 +51,36 @@
     text-transform: uppercase;
 
     color: var(--accent-color-dark-red);
+  }
+  &__description {
+    width: 200px;
+    margin-left: 295px;
+    // margin-bottom: 57px;
+    &-text {
+      margin-bottom: 20px;
+      font-family: 'DM Sans';
+      line-height: 20px;
+
+      color: var(--primary-white-color);
+    }
+    &-link {
+      width: 26px;
+      height: 26px;
+      background-color: var(--primary-white-color);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover,
+      :focus {
+        background-color: #ecebeb;
+      }
+    }
+    &-icon {
+      width: 10px;
+      height: 10px;
+      fill: var(--accent-color-dark-red);
+    }
   }
 }
 .btns__list {
@@ -57,11 +94,11 @@
 .nav {
   display: flex;
   align-items: center;
-  justify-content: centerj;
+  justify-content: center;
 
   &__list {
     display: flex;
-    margin-right: 110px;
+    align-items: center;
   }
   &__item:not(:last-child) {
     margin-right: 35px;
@@ -73,7 +110,9 @@
     font-size: 16px;
     line-height: 21px;
     color: var(--primary-white-color);
-    &:hover {
+    transition: 0.3s;
+    &:hover,
+    :focus {
       color: var(--accent-color-dark-red);
     }
   }
@@ -90,8 +129,7 @@
   padding-left: 19px;
   padding-right: 19px;
   height: 40px;
-  font-size: 14px;
-  font-weight: 400;
+
   line-height: 18.23px;
 }
 .quantity {
@@ -101,7 +139,6 @@
   &__span {
     font-family: 'Titan One';
 
-    font-weight: 400;
     font-size: 46px;
     line-height: 53px;
     /* identical to box height */
@@ -132,7 +169,6 @@
   &__text {
     font-family: 'DM Sans';
 
-    font-weight: 400;
     font-size: 14px;
     line-height: 18px;
 
