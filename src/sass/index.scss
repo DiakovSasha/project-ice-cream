@@ -2,6 +2,11 @@
 @import './base/reset';
 @import './base/variables';
 @import './base/container';
+@import './base/reuse';
 
 @import './components/header';
 @import './components/products';
+@import './components/how-its-made';
+@import './components/reviews';
+@import './components/our-location';
+@import './components/footer';

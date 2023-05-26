@@ -1,0 +1,149 @@
+.location {
+  padding-bottom: 60px;
+  background: linear-gradient(
+    to top,
+    #fff5f6 85%,
+    var(--primary-white-color) 15%
+  );
+  &__container {
+    padding: 0 20px;
+  }
+  &__list {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 60px;
+  }
+  &__type {
+    display: inline-block;
+    padding: 0 12px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 186%;
+    text-transform: uppercase;
+
+    text-align: center;
+    letter-spacing: 0.04em;
+    border-radius: 6px;
+
+    color: var(--primary-white-color);
+  }
+  &__contacts {
+    padding-top: 32px;
+    &-link {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 29px;
+      color: var(--text-color);
+      transition: color var(--transition);
+      &:hover,
+      :focus {
+        color: var(--accent-color-dark-red);
+      }
+    }
+  }
+  &__city-descr {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 183%;
+    /* or 29px */
+
+    letter-spacing: 0.04em;
+
+    color: var(--text-color);
+  }
+  &__schedule-time {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 186%;
+    /* identical to box height, or 30px */
+
+    color: var(--pink-color-background);
+  }
+
+  &__item {
+    max-width: 368px;
+    padding: 40px;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    text-align: start;
+
+    &:nth-child(1) > h5 {
+      background: #f0d1a5;
+    }
+    &:nth-child(2) > h5 {
+      background: #c2e297;
+    }
+    &:nth-child(3) > h5 {
+      background: #f0d1a5;
+    }
+  }
+
+  &__city-information {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  &__title {
+    margin-bottom: 8px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 186%;
+
+    letter-spacing: 0.04em;
+
+    color: var(--title-text-color);
+    &-days {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 186%;
+      /* identical to box height, or 30px */
+
+      letter-spacing: 0.04em;
+
+      color: var(--title-text-color);
+    }
+  }
+  &__information-list {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+  }
+  &__information-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 36px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+}
+.made__text-wrapper-btn--r {
+  width: 10px;
+  height: 8px;
+  margin-left: 13.6px;
+  fill: var(--primary-white-color);
+}
+.made__text-wrapper-btn {
+  fill: var(--accent-color-dark-red);
+}
