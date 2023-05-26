@@ -11,7 +11,7 @@
     background-repeat: no-repeat;
     background-position: left 77px bottom 46px, left 594px bottom 0,
       right 109px bottom 0, top 51px right 267px;
-    transition: background-image 1s;
+    transition: transform 1s ease-in-out;
   }
 
   &__logo {
@@ -72,9 +72,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: background-color var(--transition);
       &:hover,
       :focus {
         background-color: #ecebeb;
+        transition: 0.3s;
       }
     }
     &-icon {
@@ -111,10 +113,11 @@
     font-size: 16px;
     line-height: 21px;
     color: var(--primary-white-color);
-    transition: 0.3s;
+    transition: color var(--transition);
     &:hover,
     :focus {
       color: var(--accent-color-dark-red);
+      transition: 0.3s;
     }
   }
   &__btn {
