@@ -137,6 +137,26 @@
     align-items: center;
     text-align: center;
   }
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 184, 202, 0.3);
+    z-index: 999;
+  }
+  &__modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    width: 700px;
+    border: 7px solid var(--primary-white-color);
+  }
 }
 .made__text-wrapper-btn--r {
   width: 10px;
