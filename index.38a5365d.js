@@ -1,0 +1,2 @@
+const e=document.querySelector(".location__information-link"),n=document.querySelector(".location__overlay");function t(e){e.preventDefault(),"location__overlay"!==e.target.className&&"Escape"!==e.code||n.classList.add("visually-hidden"),n.removeEventListener("click",t),document.removeEventListener("keydown",t),console.dir("all listeners remove")}e.addEventListener("click",(function(e){e.preventDefault(),n.classList.remove("visually-hidden"),n.addEventListener("click",t),document.addEventListener("keydown",t)}));
+//# sourceMappingURL=index.38a5365d.js.map
